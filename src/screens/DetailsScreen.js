@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 const DetailsScreen = ({ route, navigation }) => {
-  const { itemId, itemName } = route.params;
+  const { itemId, itemName } = route.params || {};
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Details Screen</Text>
